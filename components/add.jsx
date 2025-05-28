@@ -1,11 +1,10 @@
-import Greet from "./Greeting"
+import Greet from "./Greeting";
 
 const App = () => {
-    return <Greet />;
+  return <Greet />;
 };
 
 export default App;
-
 
 /* const App = () => {
     return (
@@ -19,7 +18,6 @@ export default App;
 
     )
 } */
-
 
 /* const UserList = () => {
     const users = [
@@ -58,4 +56,64 @@ const ProductList = () => {
             ) )}
         </div>
     )
-} */ 
+} */
+
+/* const Person = ({ nom, age, isMarried }) => {
+  return (
+    <div>
+      <h2> {nom} </h2>
+      <h2> {age} </h2>
+      <h2> {isMarried} </h2>
+    </div>
+  );
+};
+
+const Product = ({ nom, price }) => {
+  return (
+    <div>
+      <h2> {nom} </h2>
+      <h2> {price} </h2>
+    </div>
+  );
+}; */
+
+
+/*const Card = ({ Quality }) => {
+    return (
+        <div> {Quality} </div>
+    )
+} */
+
+/* const Weather = () => {
+    let temp = 26;
+
+    if (temp < 15) {
+        return <h1> It's cold outside</h1>
+    } else if (temp >= 15 && temp <= 25) {
+        return <h1>It's nice</h1>
+    } else (temp > 25) {
+        return <h1>It's not outsite</h1>
+    }
+} 
+
+export default Weather;
+
+const UserStatus = (props) {
+
+    if (props.loggerIn && props.isAdmin) {
+        return <h1>Welcome Admin</h1>
+    } else {
+        return <h1>Welcome user</h1>
+    }
+}
+export default UserStatus;
+
+const Greeting = (props) => {
+    return props.timeOfDay === "morning" ? (
+        <h1>Good Morning ! </h1>
+    ) : (
+        <h1>Good Afternoon!</h1>
+    )
+}
+
+export default Greeting; */
