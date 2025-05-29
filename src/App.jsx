@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import Main from "../components/Main";
 import Footer from "../components/Footer";
+import { useState } from "react";
 function App() {
   return (
     <div>
@@ -208,7 +209,7 @@ const App = () => {
 
   export default App; */
 
-  import { FaArrowAltCircleDown } from "react-icons/fa";
+/* import { FaArrowAltCircleDown } from "react-icons/fa";
 
 const App = () => {
 
@@ -222,4 +223,161 @@ const App = () => {
   )
 }
 
-export default App;
+export default App; */
+
+
+/* import ProfuleCard from "../components/ProfileCard.jsx";
+import StyleCard from "../components/StyleCard.jsx";
+
+const App = () => {
+
+  return (
+    <div>
+      <ProfuleCard />
+      <StyleCard />
+    </div>
+  )
+}
+export default App; */
+
+/* const Button = () => {
+  const handleClick = () => console.log(Math.round(Math.random() + 10));
+  return <button onClick={handleClick}></button>
+}
+
+const Copy = () =>  {
+  const copyHandler = () => {
+    console.log("Stop stealing my content")
+  }
+  return (
+    <p onCopy={copyHandler}>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  )
+}
+
+const Move = () => {
+  function moveHandler() {
+    alert("Mouse move event fired")
+    console.log("Mouse move event fired")
+  }
+  return (
+    <p onMouseMove={moveHandler}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quidem.</p>
+  )
+} 
+
+const App = () => {
+  return (
+    <section>
+      <Button />
+      <Copy />
+      <Move />
+    </section>
+  )
+} */
+
+/* import { useState } from "react";
+
+const App = () => {
+  const [count, setCount] = useState(0);
+  const increment = () => setCount(count + 1)
+  const decrement = () => setCount(count - 1)
+
+  const [friends, setFriends] = useState(["Alex", "John"])
+
+  const addOneFriends = () => setFriends([...friends, "Nehemie"])
+  const removeneFriends = () => setFriends(friends.filter((f) => f !== "Nehemie"))
+  const updateFriend = () => {
+    setFriends(friends.map((f) => (f === "Alex" ? "Alex smith" : f)))
+  } 
+
+  return (
+    <section>
+      <div>
+        <h1> {count} </h1>
+        <button onClick={increment}>+</button>
+        <button onClick={decrement}>-</button>
+      </div>
+
+      <div>
+        {friends.map((f) => (
+          <li> key={Math.random()} {f} </li>
+        ))}
+
+        <button onClick={addOneFriends}>Add New Friend</button>
+        <button onClick={removeneFriends}>Remove Friend</button>
+      </div>
+
+    </section>
+  )
+} */ 
+
+/* import { useState } from "react";
+const App = () => {
+  const  [movie, setMovie] = useState({
+    title: "Equalizer 3",
+    ratings: 7,
+  })
+
+  const handleClick = () => setMovie({ ...movie, ratings: 9})
+
+  return (
+    <section> 
+      <h1>Title {movie.title} </h1>
+      <p>Rating {movie.ratings} </p>
+      <button onClick={handleClick}>Change Rating</button>
+    </section>
+  )
+}  */
+
+/* import { useState } from "react";  
+const App = () => {
+  const [movie, setMovie] = useState([
+    { id: 1, title: "Spider Man", ratings: 3 },
+    { id: 2, title: "Batman", ratings: 8 },
+    { id: 3, title: "Iron Man", ratings: 9 },
+  ])
+
+  const handleClick = () => {
+    setMovie(movie.map((m) => m.id === 1 ? { ...movie, title: "Spider Man 2"} : m ))
+  }
+
+  return (
+    <section>
+      {movie.map((m) => (
+        <li key={Math.random()}> {m.title} </li>
+      ))}
+
+      <button onClick={handler}></button>
+    </section>
+  )
+} */
+
+/* import { useState } from "react";
+import CompomentOne from "./components/CompomentOne";
+import CompomentTwo from "./components/CompomentTwo";
+
+const App = () => {
+
+  const [count, setCount] = useState(0);
+
+  return (
+    <section>
+      <CompomentOne count={count} onClickHandler={() => setCount(count + 1)} />
+      <CompomentTwo count={count} onClickHandler={() => setCount(count + 1)} />
+    </section>
+  )
+} */
+
+/* import Counter from "./components/Counter.jsx";
+import TodoList from "./components/TodoList.jsx";
+import Profile from "./components/profile.jsx"
+
+const App = () => {
+  return (
+    <section>
+      <Counter />
+      <TodoList />
+      <Profile  />
+      <ShoppingList />
+    </section>
+  )
+} */
